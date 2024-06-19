@@ -57,10 +57,10 @@
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
+                        <a class="nav-link" href="#aboutsection">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">BOOK NOW</a>
+                        <a class="nav-link" href="#booking">BOOK NOW</a>
                     </li>
                 </ul>
 
@@ -133,7 +133,7 @@
 
 
     <!-- About Section Card START-->
-    <section class="about">
+    <section class="about" id="aboutsection">
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
                 <div class="card">
@@ -422,63 +422,65 @@
 
 
     <!-- Booking Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="booking-new p-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-md-6">
-                        <h1 class="text-white mb-4">Book Your Adventure</h1>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <input type="text"
-                                        class="form-control bg-transparent border-bottom border-2 border-light text-white"
-                                        id="name" placeholder="Your Name">
+    <section id="booking">
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="booking-new p-5">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-md-6">
+                            <h1 class="text-white mb-4">Book Your Adventure</h1>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <input type="text"
+                                            class="form-control bg-transparent border-bottom border-2 border-light text-white"
+                                            id="name" placeholder="Your Name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email"
+                                            class="form-control bg-transparent border-bottom border-2 border-light text-white"
+                                            id="email" placeholder="Your Email">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text"
+                                            class="form-control bg-transparent border-bottom border-2 border-light text-white"
+                                            id="datetime" placeholder="Date & Time">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select
+                                            class="form-select bg-transparent border-bottom border-2 border-light text-white"
+                                            id="select1">
+                                            <option value="1">Destination 1</option>
+                                            <option value="2">Destination 2</option>
+                                            <option value="3">Destination 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea
+                                            class="form-control bg-transparent border-bottom border-2 border-light text-white"
+                                            placeholder="Special Request" id="message" style="height: 100px"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary w-100 py-3 mt-3" type="submit">Discover
+                                            Now</button>
+                                    </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <input type="email"
-                                        class="form-control bg-transparent border-bottom border-2 border-light text-white"
-                                        id="email" placeholder="Your Email">
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="text"
-                                        class="form-control bg-transparent border-bottom border-2 border-light text-white"
-                                        id="datetime" placeholder="Date & Time">
-                                </div>
-                                <div class="col-md-6">
-                                    <select
-                                        class="form-select bg-transparent border-bottom border-2 border-light text-white"
-                                        id="select1">
-                                        <option value="1">Destination 1</option>
-                                        <option value="2">Destination 2</option>
-                                        <option value="3">Destination 3</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <textarea
-                                        class="form-control bg-transparent border-bottom border-2 border-light text-white"
-                                        placeholder="Special Request" id="message" style="height: 100px"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3 mt-3" type="submit">Discover Now</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-md-6 text-white">
-                        <h6 class="text-white text-uppercase">Start Your Journey</h6>
-                        <h1 class="text-white mb-4">Experience the Thrill</h1>
-                        <p class="mb-4">Embark on a journey like never before. Explore the unexplored, feel the
-                            adrenaline rush, and create memories that last a lifetime.</p>
-                        <p class="mb-4">Our expert guides are ready to take you on an adventure of a lifetime. Let's
-                            make your travel dreams a reality!</p>
-                        <a class="btn btn-outline-light py-3 px-5 mt-2" href="#">Learn More</a>
+                            </form>
+                        </div>
+                        <div class="col-md-6 text-white">
+                            <h6 class="text-white text-uppercase">Start Your Journey</h6>
+                            <h1 class="text-white mb-4">Experience the Thrill</h1>
+                            <p class="mb-4">Embark on a journey like never before. Explore the unexplored, feel the
+                                adrenaline rush, and create memories that last a lifetime.</p>
+                            <p class="mb-4">Our expert guides are ready to take you on an adventure of a lifetime. Let's
+                                make your travel dreams a reality!</p>
+                            <a class="btn btn-outline-light py-3 px-5 mt-2" href="#">Learn More</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
+    </section>
     <!-- Bookinng END -->
 
 
