@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:ital,wght@0,300;0,400;1,300&family=Roboto:ital,wght@0,300;1,300&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Nav Bar  START */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 10;
+  z-index: 1000;
+}
+
+.menu .navbar {
+  width: 100%;
+  padding: 20px;
+}
+
+
+.menu .navbar-nav {
+  margin-left: auto;
+}
+
+
+.navbar-nav.me-auto {
+  margin-left: auto;
+}
+
+/* Nav Bar END */
+
+
+
+
+
+
+/* Sliding Home Page START */
+
+header {
+  display: contents;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #333;
+}
+
+.carousel-caption {
+  text-align: center;
+
+}
+
+
+.animated-text {
+  animation: fadeInUp 1s ease;
+  padding-bottom: 23%;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Sliding Home Page END */
+
+
+
+
+
+
+/* About Section Cards START */
+
+.about {
+  padding-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.row-cols-1 .col,
+.row-cols-md-2 .col {
+  margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.card {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* About Section Card End */
+
+
+
+
+
+/* Destination START */
+
+.destination-item {
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.destination-item img {
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.destination-item:hover img {
+  transform: scale(1.3) rotate(10deg);
+  opacity: 0.8;
+}
+
+.destination-overlay {
+  position: absolute;
+  top: px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: top 0.5s, right 0.5s, bottom 0.5s, left 0.5s, border-width 0.5s, opacity 0.5s;
+  z-index: 1;
+  opacity: 0;
+}
+
+.destination-overlay h5 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.destination-item:hover .destination-overlay {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  border-width: 30px;
+  opacity: 1;
+}
+
+.destination-item:hover .destination-overlay h5 {
+  opacity: 1;
+}
+
+/* Destination END */
+
+
+
+
+
+
+/* Package Overview START */
+
+.package-section {
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.package-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.package-image {
+  position: relative;
+}
+
+.package-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.package-card:hover .package-image img {
+  transform: scale(1.1);
+}
+
+.package-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.package-card:hover .package-overlay {
+  opacity: 1;
+}
+
+.package-link {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.package-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.package-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.package-price {
+  font-size: 1.2rem;
+  color: #00fb15;
+  margin-bottom: 1rem;
+}
+
+.package-meta {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.package-meta span {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.package-meta i {
+  color: #eeff00;
+  margin-right: 5px;
+}
+
+.package-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  color: #eeff00;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.package-book {
+  background-color: #28a745;
+  color: #928c3a;
+  border: none;
+}
+
+.package-book:hover {
+  background-color: #218838;
+}
+
+/* Package Overview  END */
+
+
+
+
+/* Booking Section START */
+.booking-new {
+  background: url(./images/journey-1130732.jpg) no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  padding: 50px;
+}
+
+.booking-new h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.booking-new p {
+  font-size: 1.4rem;
+}
+
+.booking-new .form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.booking-new .form-control::placeholder {
+  color: #fff !important;
+}
+
+.booking-new .btn {
+  font-size: 1.4rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.booking-new .btn:hover {
+  transform: scale(1.05);
+}
+
+/*  Booking Section END */
+
+
+
+
+
+
+/* Footer Section  START */
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding-top: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer h4 {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: skyblue;
+}
+
+.footer p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer input[type="email"] {
+  width: 70%;
+  border-radius: 20px 0 0 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid skyblue;
+  background-color: #333;
+  color: #fff;
+}
+
+.footer button.btn-subscribe {
+  border-radius: 0 20px 20px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(220, 235, 8);
+  border: 1px solid rgb(241, 222, 9);
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+.footer button.btn-subscribe:hover {
+  background-color: #dfeb33;
+}
+
+.footer .github-link {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer .github-link:hover {
+  color: skyblue;
+}
+
+/* Footer Section END */
